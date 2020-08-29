@@ -2,11 +2,11 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Article from "../components/article";
 
-export default function IndexPage() {
+export default function Page() {
     return (
-        <Layout nav="none">
+        <Layout nav="main">
             <Head>
-                <title>Conversation Commerce - {process.env.siteName}</title>
+                <title>Conversational Commerce - {process.env.siteName}</title>
             </Head>
             <Article>
                 <header>

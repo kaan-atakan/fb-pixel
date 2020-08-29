@@ -11,7 +11,7 @@ export default function IndexPage() {
                 <title>{process.env.siteName}</title>
             </Head>
             <Wrapper
-                className="flex flex-wrap px-2 md:space-x-2"
+                className="flex flex-wrap px-2 mt-2 md:space-x-2"
                 childClass="flex-1 min-w-full md:min-w-0 mb-2"
             >
                 <LinkBox
@@ -44,7 +44,7 @@ export default function IndexPage() {
                 </LinkBox>
                 <LinkBox
                     title="Inventory Integration"
-                    link="inventory-integation"
+                    link="inventory-integration"
                 >
                     <LinkLine section="data-sources">
                         Support for XML, Spreadsheet and API sources

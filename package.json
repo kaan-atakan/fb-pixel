@@ -8,6 +8,8 @@
         "export": "next export"
     },
     "dependencies": {
+        "change-case": "^4.1.1",
+        "fs": "^0.0.1-security",
         "next": "latest",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"

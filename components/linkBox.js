@@ -29,7 +29,7 @@ export default class LinkLine extends React.Component {
         return (
             <article className={className}>
                 <header className="bg-secondary text-white text-center p-2">
-                    <h2 className="text-xl">{this.props.title}</h2>
+                    <h2 className="text-lg">{this.props.title}</h2>
                 </header>
                 <div>
                     <nav className="p-2 divide-y">
