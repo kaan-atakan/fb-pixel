@@ -10,6 +10,15 @@ export default function IndexPage() {
             <Head>
                 <title>{process.env.siteName}</title>
             </Head>
+            <section className="bg-button text-white py-20 text-center">
+                <form>
+                    <label className="block mb-2" for="email">
+                        Subscribe to our newsletter:
+                    </label>
+                    <input className="rounded-l p-2 text-primary w-1/6" type="text" id="email" name="email" />
+                    <input className="rounded-r p-2 bg-primary hover:bg-secondary" type="submit" value="Subscibe" />
+                </form>
+            </section>
             <Wrapper
                 className="flex flex-wrap px-2 mt-2 md:space-x-2"
                 childClass="flex-1 min-w-full md:min-w-0 mb-2"

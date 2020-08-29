@@ -4,6 +4,7 @@ import React, {
     cloneElement,
     ReactElement,
 } from "react";
+import Link from "next/link";
 
 export default class LinkLine extends React.Component {
     render() {
@@ -43,12 +44,11 @@ export default class LinkLine extends React.Component {
                     </nav>
                 </div>
                 <nav className="mt-auto p-2 text-center">
-                    <a
-                        className="p-2 block text-xl rounded bg-button hover:bg-gray-700 text-white"
-                        href={this.props.link}
-                    >
-                        Learn More
-                    </a>
+                    <Link href={this.props.link}>
+                        <div className="cursor-pointer p-2 block text-xl rounded bg-button hover:bg-gray-700 text-white">
+                            Learn More
+                        </div>
+                    </Link>
                 </nav>
             </article>
         );
