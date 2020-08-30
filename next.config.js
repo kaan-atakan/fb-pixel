@@ -1,5 +1,5 @@
 module.exports = {
     env: {
-        siteName: 'ZZG Pixel Tutorial Site'
+        siteName: 'Pixel Tutorial Site'
     },
 }

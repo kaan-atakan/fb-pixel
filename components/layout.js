@@ -8,6 +8,7 @@ export default class Layout extends React.Component {
             <main className="min-h-screen flex flex-col">
                 <Head>
                     <script type="text/javascript" src="js/pixel.js" />
+                    <link rel="shortcut icon" href="img/favicon-16x16.png" />
                     <noscript>
                         <img
                             height="1"
@@ -17,8 +18,9 @@ export default class Layout extends React.Component {
                         />
                     </noscript>
                 </Head>
-                <header className="text-center p-8 bg-primary text-white">
-                    <h1 className="text-4xl">{process.env.siteName}</h1>
+                <header className="text-center p-8 bg-primary text-gray-100 font-extrabold flex justify-center items-center">
+                    <img className="flex-0 h-20" src="img/zzg_logo.png" />
+                    <h1 className="flex-0 mb-5 text-4xl">{process.env.siteName}</h1>
                 </header>
                 {this.props.nav != "none" ? <Nav /> : ""}
                 {this.props.children}
