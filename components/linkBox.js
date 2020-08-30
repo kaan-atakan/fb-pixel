@@ -1,31 +1,21 @@
-import React, {
-    Children,
-    isValidElement,
-    cloneElement,
-    ReactElement,
-} from "react";
+import React, { Children, isValidElement, cloneElement } from "react";
 import Link from "next/link";
+const merge = require("../libraries/merge");
 
 export default class LinkLine extends React.Component {
     render() {
-        var classes = [
-            "overflow-hidden",
-            "rounded-md",
-            "border",
-            "border-secondary",
-            "flex",
-            "flex-col",
-        ];
-
-        if ("className" in this.props) {
-            classes = classes.concat(this.props.className.split(" "));
-        }
-
-        if ("addClass" in this.props) {
-            classes = classes.concat(this.props.addClass.split(" "));
-        }
-
-        var className = [...new Set(classes)].join(" ");
+        const className = merge.classes(
+            [
+                "overflow-hidden",
+                "rounded-md",
+                "border",
+                "border-secondary",
+                "flex",
+                "flex-col",
+            ],
+            this.props.className,
+            this.props.addClass
+        );
 
         return (
             <article className={className}>
@@ -45,7 +35,7 @@ export default class LinkLine extends React.Component {
                 </div>
                 <nav className="mt-auto p-2 text-center">
                     <Link href={this.props.link}>
-                        <div className="cursor-pointer p-2 block text-xl rounded bg-button hover:bg-gray-700 text-white">
+                        <div className="cursor-pointer p-2 block text-xl rounded bg-button hover:bg-green-500 text-white">
                             Learn More
                         </div>
                     </Link>
