@@ -17,7 +17,7 @@ export default function IndexPage() {
                         Enter your email to subscribe to our newsletter:
                     </label>
                     <input
-                        className="rounded-l p-3 text-primary w-1/6"
+                        className="rounded-l p-3 text-primary w-2/3 md:w-1/4"
                         type="text"
                         id="email"
                         name="email"
@@ -31,7 +31,7 @@ export default function IndexPage() {
             </section>
             <Article>
                 <Wrapper
-                    className="flex flex-wrap px-2 mt-2 md:space-x-6"
+                    className="flex flex-wrap md:pt-2 md:px-2 md:space-x-2 lg:space-x-6"
                     childClass="flex-1 min-w-full bg-white md:min-w-0 mb-2"
                 >
                     <LinkBox

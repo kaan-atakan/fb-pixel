@@ -17,7 +17,17 @@ export default function Page() {
                     <h3>Messaging Systems</h3>
                 </a>
                 <h4>Integrated with Whatsapp and Facebook Messenger</h4>
-                <p></p>
+                <p>
+                    As a Facebook Messaging partner, Lila not only provides
+                    chat-bot and omnichannel solutions but is WhatsApp
+                    Business API. Please click the link below to learn more
+                    about WhatsApp Business API.
+                </p>
+                <p>
+                    Lila has different pricing options in order to meet various
+                    scenarios that your business model may need. Please contact
+                    us to know more about pricing options.
+                </p>
 
                 <a name="payment-systems">
                     <h3>Payment Systems</h3>

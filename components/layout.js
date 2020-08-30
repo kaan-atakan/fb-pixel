@@ -18,7 +18,7 @@ export default class Layout extends React.Component {
                         />
                     </noscript>
                 </Head>
-                <header className="text-center p-8 bg-primary text-gray-100 font-extrabold flex justify-center items-center">
+                <header className="p-2 md:p-8 bg-primary text-gray-100 font-extrabold flex flex-wrap justify-center items-center">
                     <img className="flex-0 h-20" src="img/zzg_logo.png" />
                     <h1 className="flex-0 mb-5 text-4xl">{process.env.siteName}</h1>
                 </header>
